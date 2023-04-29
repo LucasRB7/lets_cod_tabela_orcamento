@@ -1,0 +1,76 @@
+:root{
+    --bg-color-padrao: rgb(182, 177, 177);
+}
+*{    
+    padding: 0;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;        
+}
+
+input{
+    text-transform: uppercase;
+    width: 98%;   
+    font-size: 18px;     
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+main{
+    display: grid;
+}
+table{
+    border: 2px solid;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.controle-geral{   
+    width: 850px;
+    height: 750px;
+    border: 2px solid;
+    
+}
+.nome-empresa{
+    margin: 20px;
+    text-align: center;    
+}
+.dados-cliente {
+    font-size: 20px;
+    background-color: var(--bg-color-padrao) ;
+    
+}
+#os{
+    background-color: var(--bg-color-padrao);
+}
+.campo-descricao{
+    text-align: center;
+    background-color: var(--bg-color-padrao);
+    font-size: 20px;
+    font-weight: 600;   
+}
+.informacoes-adicionais{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 20px;
+    padding: 10px;
+}
+.campo-valores{
+    font-size: 17px;
+        
+}
+
+.autenticacao{
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+}
+.autenticacao hr{
+    margin-top: 20px ;
+    width: 250px;
+}
+textarea{
+    font-size: 20px;
+}
