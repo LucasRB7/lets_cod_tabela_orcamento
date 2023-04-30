@@ -70,6 +70,9 @@ table{
     padding: 10px;   
 }
 .autenticacao{
+    margin-left: 20px;
+    margin-right: 20px;
+
     padding-top: 25px;
     display: grid;
     grid-template-columns: 30% 30% 40%;
@@ -141,7 +144,7 @@ textarea{
     
     .controle-geral{   
         width: 400px;
-        height: 1000px;
+        height: 1050px;
         border: 2px solid;        
     }
     
@@ -180,6 +183,7 @@ textarea{
         margin-top: -10px;
         margin-left: 20px;
         margin-right: 20px;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
     }
@@ -188,5 +192,8 @@ textarea{
     }
     .btn-enviar{
         margin-bottom: 10px;
+    }
+    #date{
+        padding: 5px;
     }
 }
