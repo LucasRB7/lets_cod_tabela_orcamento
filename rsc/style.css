@@ -164,7 +164,7 @@ textarea{
     }
     .dados-all-in{
         display: grid;
-        grid-template-columns: 30% 70%;        
+        grid-template-columns: 35% 65%;        
     }
     .campo-valores{
         display: grid;
@@ -176,7 +176,7 @@ textarea{
     }
     .informacoes-adicionais{
         grid-template-columns: 40% 60%;
-        font-size: 18px;
+        font-size: 16px;
     }
    
     .autenticacao{
