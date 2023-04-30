@@ -37,6 +37,7 @@ table{
 #n-os{
     text-align: end;
     margin-right: 5px;
+    align-self: center;
 }
 .dados-so {
     display: grid;
@@ -120,7 +121,7 @@ textarea{
     .dados-so {        
         font-size: 16px;
         background-color: var(--bg-color-padrao) ;  
-        grid-template-columns: 63% 15% 25%;
+        grid-template-columns: 55% 18% 25%;
     }
     
     #report-cliente, #report-oficina{
@@ -130,6 +131,9 @@ textarea{
     .informacoes-adicionais{
         grid-template-columns: 35% 65%;
         font-size: 18px;
+    }
+    #n-os{
+        align-self: center;
     }
 
 }
