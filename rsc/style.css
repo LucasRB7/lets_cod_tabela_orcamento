@@ -6,7 +6,6 @@
     margin: 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;        
 }
-
 input{
     text-transform: uppercase;
     width: 98%;
@@ -26,12 +25,10 @@ table{
     margin-left: 15px;
     margin-right: 15px;
 }
-
 .controle-geral{   
     width: 850px;
     height: 850px;
-    border: 2px solid;
-    
+    border: 2px solid;    
 }
 .nome-empresa{
     margin: 20px;
@@ -47,9 +44,11 @@ table{
     font-size: 20px;
     background-color: var(--bg-color-padrao) ;    
 }   
-
 #os{   
     background-color: var(--bg-color-padrao);
+}
+#email{
+    text-transform: lowercase;
 }
 .campo-descricao{
     text-align: center;
@@ -64,13 +63,11 @@ table{
     padding: 10px;
 }
 .campo-valores{
-    font-size: 17px;
-        
+    font-size: 17px;        
 }
 #report-cliente, #report-oficina{
     padding: 10px;   
 }
-
 .autenticacao{
     padding-top: 25px;
     display: grid;
@@ -78,10 +75,12 @@ table{
     justify-items: center;
     justify-self: center;
 }
-.btn-apagar{        
+.btn-apagar{  
+    border-radius: 25px;      
     background-color: rgb(245, 118, 118);        
 }
 .btn-apagar h4{
+    border-radius: 25px;
     padding: 10px;
     font-size: 16px;
 }
@@ -89,11 +88,12 @@ table{
     transition: 0.5s;
     background-color: red;
 }
-
 .btn-enviar{
+    border-radius: 25px;
     background-color: rgb(115, 115, 255);    
 }
 .btn-enviar h4{
+    border-radius: 25px;
     padding: 10px;
     font-size: 16px;
 }
@@ -101,11 +101,9 @@ table{
     transition: 0.5;
     background-color: rgb(0, 213, 255);
 }
-
 textarea{
     font-size: 20px;
 }
-
 @media screen and (max-width: 950px){
     
     input{
@@ -134,4 +132,49 @@ textarea{
         font-size: 18px;
     }
 
+}
+
+@media screen and (max-width: 650px){
+    
+    .controle-geral{   
+        width: 400px;
+        height: 1000px;
+        border: 2px solid;        
+    }
+    
+    input{
+        text-transform: uppercase;  
+        width: 95%;
+        font-size: 12px;     
+    }
+    .dados-so {        
+        font-size: 14px;
+        background-color: var(--bg-color-padrao) ;  
+        grid-template-columns: 52% 15% 28%;
+        justify-self: center;
+    }
+    #n-os{
+        align-self: center;
+    }
+    .dados-clientes{
+        display: flex;
+    }
+    
+    #report-cliente, #report-oficina{
+        width: 340px;  
+        height: 50px;      
+    }
+    .informacoes-adicionais{
+        grid-template-columns: 35% 65%;
+        font-size: 18px;
+    }
+    .campo-valores{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .autenticacao{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
