@@ -41,20 +41,17 @@ table{
 }
 .dados-so {
     display: grid;
-    grid-template-columns: 60% 20% 20%;
+    grid-template-columns: 60% 25% 15%;
     font-size: 20px;
     background-color: var(--bg-color-padrao) ;    
 }   
-#os{   
-    background-color: var(--bg-color-padrao);
-}
 #email{
     text-transform: lowercase;
 }
 .campo-descricao{
     text-align: center;
     background-color: var(--bg-color-padrao);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;   
 }
 .informacoes-adicionais{
@@ -156,10 +153,11 @@ textarea{
     .dados-so {        
         font-size: 14px;
         background-color: var(--bg-color-padrao) ;  
-        grid-template-columns: 52% 15% 28%;
+        grid-template-columns: 55% 18% 25%;
         justify-self: center;
     }
     #n-os{
+
         align-self: center;
     }
     .dados-all-in{
@@ -175,8 +173,8 @@ textarea{
         height: 50px;      
     }
     .informacoes-adicionais{
-        grid-template-columns: 40% 60%;
-        font-size: 16px;
+        grid-template-columns: 50% 50%;
+        font-size: 14px;
     }
    
     .autenticacao{
