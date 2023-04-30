@@ -72,18 +72,18 @@ table{
 .autenticacao{
     padding-top: 25px;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    justify-items: center;
-    justify-self: center;
+    grid-template-columns: 30% 30% 40%;
+    justify-content: center;
+    align-items: center;
 }
 .btn-apagar{  
     border-radius: 25px;      
-    background-color: rgb(245, 118, 118);        
+    background-color: rgb(245, 118, 118); 
+
 }
 .btn-apagar h4{
     border-radius: 25px;
     padding: 10px;
-    font-size: 16px;
 }
 .btn-apagar :hover{
     transition: 0.5s;
@@ -96,7 +96,6 @@ table{
 .btn-enviar h4{
     border-radius: 25px;
     padding: 10px;
-    font-size: 16px;
 }
 .btn-enviar :hover{
     transition: 0.5;
@@ -160,25 +159,34 @@ textarea{
     #n-os{
         align-self: center;
     }
-    .dados-clientes{
-        display: flex;
+    .dados-all-in{
+        display: grid;
+        grid-template-columns: 30% 70%;        
     }
-    
+    .campo-valores{
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }    
     #report-cliente, #report-oficina{
         width: 340px;  
         height: 50px;      
     }
     .informacoes-adicionais{
-        grid-template-columns: 35% 65%;
+        grid-template-columns: 40% 60%;
         font-size: 18px;
     }
-    .campo-valores{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-    }
+   
     .autenticacao{
+        margin-top: -10px;
         margin-left: 20px;
         margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-apagar{
+        margin-bottom: 10px;
+    }
+    .btn-enviar{
+        margin-bottom: 10px;
     }
 }
