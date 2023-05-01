@@ -76,6 +76,14 @@ table{
     justify-content: center;
     align-items: center;
 }
+.bnt-total{
+    border-radius: 25px;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(132, 253, 132);
+}
+
 .btn-apagar{  
     border-radius: 25px;      
     background-color: rgb(245, 118, 118); 
@@ -166,7 +174,7 @@ textarea{
     }
     .campo-valores{
         display: grid;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 50% 40%;
     }    
     #report-cliente, #report-oficina{
         width: 300px;  

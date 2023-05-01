@@ -14,3 +14,31 @@
 // }
 
 // console.log(report);
+
+const valorServico = document.getElementById("servicos");    
+const valorPecas = document.getElementById("pecas");
+const valorTotal = document.getElementById("total");
+const btnTotal = document.getElementById("btn-resultado");
+
+function somar(p1,p2){
+    return p1 + p2;
+}
+function pegaTecla(){
+    let tecla = event.keyCode;
+    if(tecla >= 48 && tecla <= 57 || tecla >= 96 && tecla <= 105){
+                        
+    } else{
+        
+        alert("Somente numeros!")
+    }
+}
+valorServico.addEventListener("keyup", pegaTecla);
+
+btnTotal.addEventListener("click", () => {
+    valorTotal.textContent = somar(Number(valorServico.value), Number(valorPecas.value));
+})
+
+
+
+
+//*48 a 57 || 96 a 105 numeros
