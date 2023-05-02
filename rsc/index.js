@@ -37,11 +37,10 @@ let cep = document.getElementById("cep");
 
 const buscaCep=(()=>{
     if(cep.value != ""){        
-        let urlCep= "https://brasilapi.com.br/api/cep/v1/" + cep.value;
+        let urlCep= `https://brasilapi.com.br/api/cep/v1/${cep.value}`;
         let reqApi= new XMLHttpRequest();
         reqApi.open("GET", urlCep);
-        reqApi.send();
-        
+        reqApi.send();        
         reqApi.onload = () => {
             if (reqApi.status === 200) {
                 let inforApi = JSON.parse(reqApi.response);
@@ -63,10 +62,7 @@ const buscaCep=(()=>{
             }
         }     
 
-    } 
-
-
-     
+    }     
 
 })
 const apagar=()=>{
