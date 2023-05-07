@@ -55,7 +55,7 @@ function cadastrar(){
 function pesquisar(){
     listCadastrados.find((e)=>{
         if(e.usuario == inpUsuario.value && e.senha == inpSenha.value){
-            window.location.href = "page1.html"
+            window.location.href = "/page1.html"
         }else{
             alert("Erro de autenticação")
         }
