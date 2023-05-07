@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rsc/style.css">
+    <title>Orçamento de Serviços Automotivos</title>
+</head>
+<body>
+
+    <div class="controle-geral">
+        <header>
+            <h2 class="nome-empresa">NOME DA SUA EMPRESA</h2>
+        </header>
+        <main>
+            <table>
+                <tr  class="dados-so">
+                    <td class="servico" >
+                        <strong>
+                            SERVIÇO DE MANUTENÇÃO<br> EM AUTOMÓVEL
+                        </strong>
+                    </td>                    
+                    <td id="n-os">
+                        OS Nº
+                    </td>
+                    <td id="n-os">
+                        <h4>0000000000</h4>
+                    </td>
+                </tr>
+
+            </table>
+            <table class="dados-cliente">                
+                <tbody>
+                    <tr class="dados-all-in">
+                        <td >
+                            Nome
+                        </td>
+                        <td>
+                            <label>
+                                <input id="nome" type="text" autocomplete="none">   
+                            </label>
+                        </td>
+                        <td>
+                            E-mail
+                        </td>
+                        <td>
+                            <label>
+                                <input id="email" type="email" autocomplete="none">
+                            </label>
+                        </td>
+                                            
+                    </tr>
+                    <tr class="dados-all-in">
+                         <td>Telefone</td>
+                         <td>
+                            <label>
+                                <input id="phone" type="number" autocomplete="none">
+                            </label>
+                        </td>
+
+                        <td>
+                            CEP
+                        </td>
+                        <td>
+                            <label>
+                                <input id="cep" type="number" placeholder="Somente 8 numeros" autocomplete="none">
+                            </label>
+                        </td>      
+                    </tr>
+                    <tr class="dados-all-in" >
+                        <td>
+                            Endereço
+                        </td>
+                        <td>
+                            <label>
+                                <input id="endereco" type="text" autocomplete="none">
+                            </label>
+                        </td> 
+
+                        <td>Bairro</td>
+                        <td>
+                            <label>
+                                <input id="bairro" type="text" autocomplete="none"  >
+                            </label>
+                        </td>
+                                                    
+                    </tr>
+                    <tr class="dados-all-in">
+                        <td>Cidade</td>
+                        <td>
+                            <label>
+                                <input id="cidade" type="text" autocomplete="none">
+                            </label>
+                        </td>
+                        <td>Estado</td>
+                        <td>
+                            <label>
+                                <input id="estado" type="text" autocomplete="none">
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr class="dados-all-in">
+                        
+                        <td>CPF/CNPJ</td>
+                        <td>
+                            <label>
+                                <input id="cpn" type="number">
+                            </label>
+                        </td>
+                        <td>RG/IE</td>
+                        <td>
+                            <label>
+                                <input id="id" type="number">
+                            </label>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>  
+            <table>
+                <tbody class="dados-veiculo">
+                    <tr class="dados-all-in">
+                        <td>Modelo</td>
+                        <td>
+                            <label>
+                                <input id="modeloVeiculo" type="text">
+                            </label>
+                        </td>
+                        <td>Ano</td>
+                        <td>
+                            <label>
+                                <input id="anoVeiculo" type="number">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="dados-all-in">
+                        <td>Marca</td>
+                        <td>
+                            <label>
+                                <input id="marcaVeiculo" type="text">
+                            </label>
+                        </td>
+                        <td>Placa</td>
+                        <td>
+                            <label>
+                                <input id="placaVeiculo" type="text">
+                            </label>
+                        </td>
+                        
+                    </tr>
+                    <tr class="dados-all-in">
+                        <td>Nº Chassis</td>
+                        <td>
+                            <label>
+                                <input id="chassisVeiculo" type="text">
+                            </label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="diagnostico-veiculo">
+                <tr>
+                    <td class="campo-descricao">DEFEITOS/RECLAMAÇÃO</td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="" id="report-cliente" cols="86" rows="3"></textarea> 
+                        
+                    </td>
+                </tr>   
+                <tr>
+                    <td class="campo-descricao">SERVIÇOS REALIZADOS NO LOCAL</td>                
+                </tr>         
+                <tr>
+                    <td>
+                        <textarea name="" id="report-oficina" cols="86" rows="3"></textarea>
+                                              
+                    </td>
+                </tr>
+            </table>
+            <table >
+                <tr class="informacoes-adicionais">
+                    <td>
+                        GARANTIA:<br> 90 Dias
+                    </td>
+                    <td>
+                        PROXIMA REVISÃO:<br> 6 MESES OU 20.000 KM
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr class="campo-valores">
+                    <td>
+                        Mão de Obra R$:
+                    </td>
+                    <td>
+                        <label>
+                            <input id="servicos" type="number" placeholder="Somente numeros">
+                        </label>
+                    </td>
+                    <td>
+                        Peças R$:
+                    </td>
+                    <td>
+                        <label>
+                            <input id="pecas" type="number" placeholder="Somente numeros">
+                        </label>
+                    </td>
+                    <td>
+                        <button id="btn-resultado" class="bnt-total">
+                            Total
+                        </button>
+                    </td>
+                    <td>                  
+                        <h4>R$ <span id="total">0</span></h4>
+
+                    </td>                                  
+                </tr>
+               
+            </table>                
+        </main>
+        <footer class="autenticacao">
+            <div>
+                <button id="btn-limpar" class="btn-apagar">
+                    <h4>Apagar Dados</h4>
+                </button>         
+            </div>
+            <div>
+                <button  class="btn-enviar">
+                    <h4>Salvar Dados</h4>
+                </button>           
+            </div>
+            <div>
+                <input id="date" type="date">                    
+            </div>
+        </footer>
+    </div>
+
+    <script src="rsc/page1.js"></script>
+</body>
+</html>

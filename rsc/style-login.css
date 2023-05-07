@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c8c9b5;
+}
+.tela-login{
+    border: 3px solid #dedfc5;
+    background-color: #b2b39f;
+    border-radius: 25px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titulo{
+    color: #3d423c;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.formulario{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #3d423c;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.formulario h3{
+    text-align: center;
+}
+
+.obs{
+    margin: -2px;
+    color: #e60202;
+    font-weight : 800;
+}
+.btn-entrar{
+    margin: 5px;    
+    padding: 10px 35px ;
+    border-radius: 25px;
+    color: #3d423c;
+    font-weight: 800;
+}
+.btn-cadastrar {
+    margin: 5px;
+    padding: 10px 15px ;
+    border-radius: 25px;
+    color: #3d423c;
+    font-weight: 800;
+}
+#usuario, #senha{
+    padding: 5px;
+    border: #dedfc5 ;
+    border-radius: 25px;
+    width: 200px;
+    height: 20px;
+}
