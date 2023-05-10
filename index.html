@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="rsc/style-login.css">
+    <script src="rsc/login.js" defer></script>
     <title>Login</title>
 </head>
 <body>
@@ -24,10 +25,43 @@
                 </label>
             </form>            
             <button class="btn-entrar">Entrar</button>    
-            <button class="btn-cadastrar">Cadastre-se</button>         
+            <button class="btn-cadastrar">Cadastre-se</button>
+        </div> 
+
+        <div id="tela-cadastro" class="tela-cadastro">
+            <div id="close" class="close">
+                <button class="close-btn" id="close-btn">x</button>
+            </div>
+            <div id="cadastro" class="cadastro">
+                <h1 class="titulo-cadastro">Cadastre-se</h1>
+                <form action="" method="post" class="form">
+                    <label class="reg-formulario">
+                        <h3>Insira o novo usuário:</h3>
+                        <input type="text" name="reg-usuario" id="reg-usuario" class="reg-usuario">
+                        <span id="obs-reg1" class="obs-reg"></span>   
+                    </label>
+                    <label class="reg-formulario">
+                        <h3>Insira a nova senha:</h3>
+                        <input type="text" name="reg-senha1" id="reg-senha1" class="reg-senha1">
+                        <span id="obs-reg2" class="obs-reg"></span> 
+                    </label>
+                    <label class="reg-formulario">
+                        <h3>Repita a nova senha:</h3>
+                        <input type="text" name="reg-senha2" id="reg-senha2" class="reg-senha2">
+                        <span id="obs-reg3" class="obs-reg"> </span>
+                    </label>            
+                    <button class="salvar-btn" id="salvar-btn">Salvar</button>                    
+                </form>
+            </div>            
+        </div>
+
+        <div id="confirmacao" class="confirmacao">
             
         </div>
-    </main>
-    <script src="rsc/login.js"></script>
+        
+    </main>    
+
+    
+    
 </body>
 </html>

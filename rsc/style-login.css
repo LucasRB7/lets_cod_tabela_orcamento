@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 main{
     height: 100vh;
@@ -10,6 +11,7 @@ main{
     background-color: #c8c9b5;
 }
 .tela-login{
+    
     border: 3px solid #dedfc5;
     background-color: #b2b39f;
     border-radius: 25px;
@@ -20,6 +22,7 @@ main{
     align-items: center;
     justify-content: center;
 }
+
 .titulo{
     color: #3d423c;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -61,4 +64,85 @@ main{
     border-radius: 25px;
     width: 200px;
     height: 20px;
+}
+
+/**PopUp Cadastro*/
+.tela-cadastro{
+    
+    position: fixed;
+    border: 3px solid #dedfc5;
+    border-radius: 25px;
+    width: 380px;
+    height: 480px;
+    background-color: rgb(50, 50, 50);
+    display: none;
+    grid-template-rows: 10% 80%;
+    align-items: center;
+    justify-content: center;    
+    transform: scale(1);
+    transition-delay: 1000ms;
+    transition: all 1s;
+}
+
+.close{    
+    width: 340px;
+    display: flex;
+    justify-content: end;    
+}
+.close-btn{
+    background-color: #e60202;
+    color: #dedfc5;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo-cadastro{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #dedfc5;
+    font-size: 35px;    
+}
+.reg-usuario, .reg-senha1, .reg-senha2{
+    padding: 12px;    
+    border: #dedfc5 ;
+    border-radius: 25px;
+    width: 200px;
+    height: 20px;
+}
+.reg-formulario{
+    display: flex;
+    flex-direction: column;
+}
+.reg-formulario h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #dedfc5;
+    text-align: center;
+}
+.obs-reg{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    padding: 2px;
+    color: #f0af18;
+    font-weight : 800;
+    height: 20px;
+}
+.salvar-btn{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px 10px;  
+    margin: 10px;  
+    border: 3px solid rgb(83, 146, 240);
+    border-radius: 15px;
+    color:rgba(0, 0, 0, 1)
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
