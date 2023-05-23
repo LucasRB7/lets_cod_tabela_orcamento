@@ -34,29 +34,38 @@
             </div>
             <div id="cadastro" class="cadastro">
                 <h1 class="titulo-cadastro">Cadastre-se</h1>
-                <form action="" method="post" class="form">
+                <div class="form" id="form">
                     <label class="reg-formulario">
                         <h3>Insira o novo usuário:</h3>
-                        <input type="text" name="reg-usuario" id="reg-usuario" class="reg-usuario" oninput="ValidarCadastroUsuario()">
+                        <input type="text" id="reg-usuario" class="reg-usuario" oninput="ValidarCadastroUsuario()">
                         <span id="obs-reg" class="obs-reg"></span>   
                     </label>
                     <label class="reg-formulario">
                         <h3>Insira a nova senha:</h3>
-                        <input type="password" name="reg-senha1" id="reg-senha1" class="reg-senha1" oninput="ValidarCadastroSenha()">
+                        <input type="text" id="reg-senha1" class="reg-senha1" oninput="ValidarCadastroSenha()">
                         <span id="obs-reg" class="obs-reg"></span> 
                     </label>
                     <label class="reg-formulario">
                         <h3>Repita a nova senha:</h3>
-                        <input type="password" name="reg-senha2" id="reg-senha2" class="reg-senha2" oninput="ValidarCadastroSenha()">
+                        <input type="text"  id="reg-senha2" class="reg-senha2" oninput="ValidarCadastroSenha()">
                         <span id="obs-reg" class="obs-reg"> </span>
                     </label>            
-                    <button class="salvar-btn" id="salvar-btn">Salvar</button>                    
-                </form>
+                    <button class="salvar-btn" id="salvar-btn" disabled>Salvar</button>                    
+                </div>
             </div>            
         </div>
 
         <div id="confirmacao" class="confirmacao">
-            
+            <img src="rsc/img/ok.png" alt="Cadastro Confirmado">
+            <h1>Usuário cadastrado com sucesso</h1>
+        </div>
+        <div id="negacao" class="negacao">
+            <img src="rsc/img/acsnegado.png" alt="Cadastro Negado">
+            <h1>Usuário ja esta cadastrado!</h1>
+        </div>
+        <div id="boas_vindas" class="confirmacao">
+            <img src="rsc/img/usuariook.png" alt="Acesso Permitido">
+            <h1>Usuário ja esta cadastrado!</h1>
         </div>
         
     </main>    

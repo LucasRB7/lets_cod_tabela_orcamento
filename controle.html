@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="rsc/controle.js" defer></script>
+    <link rel="stylesheet" href="rsc/controle.css">
+    <title>Controle de Mercadorias</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Bem vindo ,consultor </h1> 
+            <button>Sair</button>
+        </div>
+        <nav>
+            <button>Vendas</button>
+            <button>Cadastrar Produtos</button>
+            <button>Alterar/Excluir</button>
+            <button>Listar Produtos</button>
+        </nav>        
+    </header>    
+    <main>
+        <section>
+            <label for="vendas_produtos">Produto: </label>
+            <input type="text" id="vendas_produtos">
+            <button class="btn_pesquisa"><img src="rsc/img/btn_pesquisa.png" alt=""></button>
+        </section>
+        <section>
+            <!-- <label for="produto_qtd"><h3 id="produto_pes"></h3></label>
+            <input id="produto_qtd" type="number"> -->
+
+        </section>
+        <section>
+            <h3>Cadastro de Produtos</h3>
+            <label for="cod_produtos">Codigo: </label>
+            <span id="cod_produtos">00000</span>
+            <label for="nome_produto">Nome do Produto: </label>
+            <input id="nome_produto" type="text">            
+            <label for="tipo_produto">Tipo do produto</label>
+            <select name="tipo_produto" id="tipo_produto">
+                <optgroup label="Escolha um tipo">      
+                    <option value="Ferramentas">Ferramentas</option>
+                    <option value="Acabamento">Tintas</option>
+                    <option value="Construcao">Construção</option>
+                    <option value="Iluminacao">Iluminação</option>
+                    <option value="Eletrica">Eletrica</option>
+                </optgroup>
+            </select>
+            <label for="produto_qtd">Quantidade: </label>
+            <input type="number" id="produto_qtd">
+            <label for="produto_vlrbase">Valor Base: </label>
+            <input type="number" id="produto_vlrbase">   
+            <label for="produto_porcent">Margem de Lucro %: </label>
+            <input type="number" id="produto_porcent"> 
+            <label for="produto_vlrfinal">Valor final:</label>  
+            <span id="produto_vlrfinal"></span>
+            <button>Limpar</button>
+            <button>Salvar Produto</button>
+            
+                        
+        </section>
+    </main>
+</body>
+</html>
